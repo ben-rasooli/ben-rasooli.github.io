@@ -1,2 +1,2 @@
-# sudomind.github.io
-For support or any question about the Sudomind game, please contact me on ben.rasooli@gmail.com
+# Sudomind
+For support or any questions about the Sudomind game, please contact me at ben.rasooli@gmail.com
