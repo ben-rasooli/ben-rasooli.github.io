@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudomind</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #333333;
+      color: #ffffff;
+      height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      /* Adds spacing between the h1 and the images */
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: nowrap;
+      /* Prevents images from wrapping onto the next line */
+      overflow-x: auto;
+      /* Allows horizontal scrolling if images overflow */
+    }
+
+    img {
+      flex: 1 1 auto;
+      /* Allows images to grow and shrink but not change their base size */
+      max-width: 100%;
+      /* Maximum width of each image is 100% of its flex container base size */
+      height: auto;
+      /* Maintains the aspect ratio */
+      margin: 0 5px;
+      /* Adds a 5 pixel gap on the left and right of each image */
+    }
+
+    @media (max-width: 800px) {
+      img {
+        flex-basis: calc(50% - 10px);
+      }
+    }
+
+    @media (max-width: 500px) {
+      img {
+        flex-basis: calc(100% - 10px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Sudomind</h1>
+  <div class="gallery">
+    <img src="images/1-b.png" alt="Image 1">
+    <img src="images/1-a.png" alt="Image 2">
+    <img src="images/2-a.png" alt="Image 3">
+    <img src="images/2-b.png" alt="Image 4">
+    <img src="images/3-a.png" alt="Image 5">
+    <img src="images/3-b.png" alt="Image 6">
+  </div>
+  <p>For support or any questions about the Sudomind game, please contact me at ben.rasooli@gmail.com</p>
+</body>
+
+</html>
